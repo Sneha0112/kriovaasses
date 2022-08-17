@@ -1,0 +1,48 @@
+<!--<div class="text-center"><h1>Sign Up</h1></div>-->
+
+
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+             <div class="card1">
+              <div class="card">
+              
+               Sign Up<br><br>
+               <h4>Already have an account    <a routerlink="['\login']" href="login" style="color:red">Login</a> </h4><br><br>
+              
+              </div>
+              <form>
+                   <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Name</label><br>
+                            <input formControlName="Name" type="text" class="form-control" id="exampleInputname" aria-describedby="name"><br><br>
+                        </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail2" class="form-label">Email</label><br>
+                            <input formControlName="Email" type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"><br><br>
+                          
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword2" class="form-label1">Password</label><br>
+                            <input formControlName="Password" type="password" class="form-control" id="exampleInputPassword2"><br><br>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputConfirmPassword1" class="form-label1">Confirm Password</label><br>
+                            <input formControlName="ConfirmPassword" type="password" class="form-control" id="exampleInputConfirmPassword1"><br><br>
+        
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                      </form>
+              </div>
+          </div>
+      </div>
+  
+  </div>
+  
+
+  
+ 
+     
